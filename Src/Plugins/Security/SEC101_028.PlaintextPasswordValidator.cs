@@ -20,11 +20,7 @@ namespace Microsoft.CodeAnalysis.Sarif.PatternMatcher.Plugins.Security
                 {
                     Secret = secret.Value,
                 },
-                ResultLevelKind = new ResultLevelKind
-                {
-                    Level = FailureLevel.Warning,
-                },
-                ValidationState = ValidationState.Authorized,
+                ValidationState = ValidationState.Unknown,
             };
 
             return new[] { validationResult };
